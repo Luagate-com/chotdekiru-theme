@@ -1,13 +1,19 @@
-# Noiman Color Theme for VS Code
+# Chotdekiru Color Theme
 
-chotdekiru / noiman ブランドカラー (`#05B45B`) に揃えた VS Code テーマ。
+chotdekiru ブランドカラー (`#05B45B`) に揃えた、Monaco エディタと配色一致の VS Code / Cursor テーマセット (Light + Dark)。
 
-`packages/shared-ui/src/components/domain/CodeEditor/CodeEditor.tsx` で定義している Monaco の `noiman-light` / `noiman-dark` と配色を完全一致させているので、Web 上のレッスンエディタとローカル VS Code でシンタックス表示が揃う。
+Web 上の [chotdekiru.com](https://chotdekiru.com) のレッスンエディタとローカルエディタでシンタックス表示が完全に揃います。
+
+## 動作環境
+
+- **VS Code** (1.74 以上)
+- **Cursor** (VS Code 互換なのでそのまま動作)
+- その他 VS Code 拡張機能を読み込めるエディタ (VSCodium 等)
 
 ## 含まれるテーマ
 
-- **Noiman Light** — レッスン受講中のコードエディタと同じライト配色
-- **Noiman Dark** — Figma 仕様のダークグリーン背景
+- **Chotdekiru Light** — chotdekiru.com のレッスンエディタと同じライト配色
+- **Chotdekiru Dark** — ブランドカラーに揃えたダークグリーン背景
 
 ## 配色 (シンタックスハイライト)
 
@@ -21,26 +27,39 @@ chotdekiru / noiman ブランドカラー (`#05B45B`) に揃えた VS Code テ�
 | function / method | `#05B45B` | `#7ED89D` |
 | variable | `#2B2B2A` | `#E5E5E5` |
 
-## インストール (ローカル / 開発)
+## インストール
 
-このパッケージは VS Code Marketplace 未公開。ローカルでインストールする場合は次の手順で。
+### VS Code Marketplace から (公開後)
+
+VS Code / Cursor の拡張機能タブで `Chotdekiru` を検索してインストール。
+
+### .vsix を直接インストール
+
+[Releases](https://github.com/Luagate-com/chotdekiru-theme/releases) から `.vsix` をダウンロードし、
 
 ```bash
-cd packages/vscode-theme
+# VS Code
+code --install-extension chotdekiru-theme-0.1.0.vsix
 
-# 1. vsce で .vsix をビルド
-npx --yes vsce package --no-dependencies
-
-# 2. 出来上がった .vsix を VS Code にインストール
-code --install-extension noiman-vscode-theme-0.1.0.vsix
+# Cursor
+cursor --install-extension chotdekiru-theme-0.1.0.vsix
 ```
 
-VS Code を再起動し、`Cmd+K Cmd+T` (テーマ選択) から `Noiman Light` または `Noiman Dark` を選ぶ。
+または GUI からインストール
 
-## 配色を更新したら
+1. 拡張機能タブを開く (`Cmd+Shift+X`)
+2. 右上の `...` メニュー → `Install from VSIX...`
+3. ダウンロードした `.vsix` を選択
 
-1. `CodeEditor.tsx` の `defineTheme("noiman-light", ...)` を修正
-2. このパッケージの `themes/noiman-light-color-theme.json` も同じ色に揃える
-3. `version` をバンプして再ビルド + 再インストール
+## テーマの選択
 
-両方を同じトーンに保つのがこのパッケージの存在意義。
+インストール後、`Cmd+K Cmd+T` (テーマ選択) から
+
+- `Chotdekiru Light`
+- `Chotdekiru Dark`
+
+を選択してください。
+
+## ライセンス
+
+MIT
