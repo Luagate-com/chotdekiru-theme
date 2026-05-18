@@ -1,0 +1,45 @@
+{
+  "name": "chotdekiru-theme",
+  "displayName": "Chotdekiru Color Theme",
+  "description": "chotdekiru ブランドカラー (#05B45B) に揃えた、Monaco エディタと配色一致の VS Code テーマセット (Light + Dark)。",
+  "version": "0.1.0",
+  "publisher": "chotdekiru",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Themes"],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "chotdekiru",
+    "japanese",
+    "green"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luagate-com/chotdekiru-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Luagate-com/chotdekiru-theme/issues"
+  },
+  "homepage": "https://github.com/Luagate-com/chotdekiru-theme#readme",
+  "author": {
+    "name": "Chotdekiru"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Chotdekiru Light",
+        "uiTheme": "vs",
+        "path": "./themes/noiman-light-color-theme.json"
+      },
+      {
+        "label": "Chotdekiru Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noiman-dark-color-theme.json"
+      }
+    ]
+  }
+}
