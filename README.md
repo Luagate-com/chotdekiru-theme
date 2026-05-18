@@ -60,6 +60,13 @@ cursor --install-extension chotdekiru-theme-0.1.0.vsix
 
 を選択してください。
 
+## 他のツール向けテーマ
+
+VS Code 以外でも同じ chotdekiru ブランドカラーを使えます。
+
+- **[Slack](./extras/slack/README.md)** — Slack デスクトップアプリのカスタムテーマ (Light / Dark)
+- **[Alacritty](./extras/alacritty/README.md)** — Alacritty ターミナルエミュレータのカラースキーム (Light / Dark)
+
 ## ライセンス
 
 MIT

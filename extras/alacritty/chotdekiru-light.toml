@@ -1,0 +1,36 @@
+# Chotdekiru Light — chotdekiru ブランドカラー (#05B45B) に揃えたライトテーマ
+# https://github.com/Luagate-com/chotdekiru-theme と配色一致
+
+[colors.primary]
+background = "#FDFDFA"
+foreground = "#363635"
+
+[colors.cursor]
+text = "#FDFDFA"
+cursor = "#05B45B"
+
+[colors.selection]
+text = "CellForeground"
+background = "#A7E5B8"
+
+# 通常色 (ANSI 0-7)
+[colors.normal]
+black   = "#363635"
+red     = "#F15025"
+green   = "#05B45B"
+yellow  = "#D97742"
+blue    = "#1D6FD3"
+magenta = "#A05A9C"
+cyan    = "#007B6E"
+white   = "#FDFDFA"
+
+# 明色 (ANSI 8-15)
+[colors.bright]
+black   = "#7B6F62"
+red     = "#F97C6A"
+green   = "#4FC67F"
+yellow  = "#E6A36F"
+blue    = "#4A95E0"
+magenta = "#C685C0"
+cyan    = "#4FA89D"
+white   = "#FFFFFF"

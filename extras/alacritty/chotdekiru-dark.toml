@@ -1,0 +1,36 @@
+# Chotdekiru Dark — chotdekiru ブランドカラー (#05B45B) に揃えたダークテーマ
+# https://github.com/Luagate-com/chotdekiru-theme と配色一致
+
+[colors.primary]
+background = "#012E1A"
+foreground = "#E5E5E5"
+
+[colors.cursor]
+text = "#012E1A"
+cursor = "#7ED89D"
+
+[colors.selection]
+text = "CellForeground"
+background = "#037F40"
+
+# 通常色 (ANSI 0-7)
+[colors.normal]
+black   = "#012E1A"
+red     = "#F97C6A"
+green   = "#7ED89D"
+yellow  = "#CE9178"
+blue    = "#4A95E0"
+magenta = "#C685C0"
+cyan    = "#4FA89D"
+white   = "#E5E5E5"
+
+# 明色 (ANSI 8-15)
+[colors.bright]
+black   = "#4FC67F"
+red     = "#FFA08C"
+green   = "#A7E5B8"
+yellow  = "#E6A36F"
+blue    = "#7BB9F0"
+magenta = "#E0A0D8"
+cyan    = "#7ED8C8"
+white   = "#FFFFFF"
